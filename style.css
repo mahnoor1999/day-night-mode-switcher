@@ -1,0 +1,118 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    text-align: justify;
+    
+}
+header{
+    margin:auto;
+    width: 50%;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    padding: 0.5em;
+    
+    
+}
+main{
+    margin: auto;
+    width: 50%;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    
+}
+ul{
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    justify-content: space-between;
+}
+ul li{
+    padding: 0.1em;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+#closure-heading{
+    color: #3380b4;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#icon {
+    position: relative;
+} 
+input{
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    opacity: 0;
+  
+}
+.icon-change{
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.1em 0.3em;
+    border-radius: 1.5em; 
+    background-color: #f0f0f0; 
+}
+code{
+    background-color: rgb(243, 243, 243);
+    padding: 5px;
+}
+
+
+@media( min-width: 320px){
+    header{
+        width: 100%;
+        margin: 0px;
+        padding: 0em
+    }
+    main{
+        width: 100%;
+        margin: 0px;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
+@media (min-width :786px){
+    header{
+        width: 80%;
+        margin: auto;
+        padding: 0.5em
+    }
+    main{
+        width: 80%;
+        margin: auto;
+
+    }
+    ul{
+        flex-direction: row;
+    }
+}
+@media (min-width :1024px){
+    header{
+        width: 50%;
+        margin: auto;
+        padding: 0.5em;
+
+    }
+    main{
+        width: 50%;
+        margin: auto;
+    }
+    ul{
+        flex-direction: row;
+    }
+}

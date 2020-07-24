@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" class="logo" id="my-logo"> whatthefork.is </a></li>
+                    <li><span id="closure-heading">a closure</span></li>
+                    <li id="icon"><span class="icon-change"><i class="fa fa-moon-o"></i></span><input type="checkbox" id="color-changer"></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>
+                Closures are confusing because they are an “invisible” concept. <br>
+                When you use an object, a variable, or a function, you do this intentionally. You think: “I’m gonna need
+                a
+                variable here,” and add it to your code. <br>
+                Closures are different. By the time most people approach closures, they have already used them
+                unknowingly
+                many times — and it is likely that this is true for yourself, too. So learning closures is less about
+                understanding a new concept and more about recognizing something you have already been doing for a
+                while.
+
+
+            </p>
+            <h3>tl;dr</h3>
+            <p>
+                You have a closure when <strong> a function accesses variables defined outside of it.
+                </strong>
+
+            </p>
+            <p>For example, this code snippet contains a closure:</p>
+           <code> let users = ['Alice', 'Dan', 'Jessica'];
+            let query = 'A';
+            let user = users.filter(user => user.startsWith(query));</code>
+            <p>
+                Notice how user => user.startsWith(query) is itself a function. It uses the query variable. But the
+                query
+                variable is defined outside of that function. That’s a closure.
+            </p>
+            <hr>
+            <p>
+                You can stop reading here, if you want. The rest of this article approaches closures in a different way.
+                Instead
+                of explaining what a closure is, it will walk you through the process of discovering closures — like the
+                first
+                programmers did in the 1960s.
+            </p>
+           
+            <h3>Step 1: Functions Can Access Outside Variables</h3>
+            <p>
+                To understand closures, we need to be somewhat familiar with variables and functions. In this example,
+                we
+                declare the food variable inside the eat function:
+            </p>
+            <code>let users = ['Alice', 'Dan', 'Jessica'];
+                let query = 'A';
+                let user = users.filter(user => user.startsWith(query));</code>
+            <h3>Step 2: Functions Can Access Outside Variables</h3>
+            <p>
+                To understand closures, we need to be somewhat familiar with variables and functions. In this example,
+                we
+                declare the food variable inside the eat function:
+            </p>
+            <code>let users = ['Alice', 'Dan', 'Jessica'];
+                let query = 'A';
+                let user = users.filter(user => user.startsWith(query));</code>
+            <h3>Step 3: Functions Can Access Outside Variables</h3>
+            <p>
+                To understand closures, we need to be somewhat familiar with variables and functions. In this example,
+                we
+                declare the food variable inside the eat function:
+            </p>
+            <code>let users = ['Alice', 'Dan', 'Jessica'];
+                let query = 'A';
+                let user = users.filter(user => user.startsWith(query));</code>
+        </main>
+    </section>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
