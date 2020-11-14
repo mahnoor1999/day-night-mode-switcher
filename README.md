@@ -1,4 +1,4 @@
-# Day-night-mode-switch
+# Day Night Mode Switcher
 This website provides a toggle theme. </br>
 Allow the users to switch on the dark mode.</br>
 This project is developed using HTML, CSS and Javascript.</br>
